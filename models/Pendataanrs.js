@@ -22,4 +22,4 @@ const pendataanrsSchema = mongoose.Schema({
     versionKey: false
 
 })
-module.exports = mongoose.model('Pendataanrs', postSchema, 'pendataanrs')
+module.exports = mongoose.model('Pendataanrs', pendataanrsSchema, 'pendataanrs')
