@@ -58,7 +58,7 @@ router.post('/', async (req, res) => {
     const inputPendataanrs = new Pendataanrs({
         nama: req.body.nama,
         alamat: req.body.alamat,
-        deskripsi: req.body.alamat,
+        deskripsi: req.body.deskripsi,
         user_id: req.body.user_id
     })
     try {
@@ -75,7 +75,7 @@ router.put('/', async (req, res) => {
         id: req.body.id,
         nama: req.body.nama,
         alamat: req.body.alamat,
-        deskripsi: req.body.alamat
+        deskripsi: req.body.deskripsi
     }
     try {
         const pendataanrs = await Pendataanrs.updateOne({
